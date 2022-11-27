@@ -1,0 +1,1041 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: black;
+   color: #fff; 
+ 
+   
+}
+ html{
+    height: 100%;
+    max-width:1920px;
+    min-width: 480px;
+ }
+
+
+.hero{
+    display: flex;
+    width: 225vh;
+    height: 585%;
+ 
+}
+
+.left-col{
+    flex-basis: 30%;
+    height: 585vh;
+    background: #ff2079;
+    position: relative;
+}
+
+
+.logo{
+    position: absolute;
+    margin-top: 15px;  
+    margin-left: 10px;
+}
+
+.logoimg{
+    height: 120px;
+}
+
+.whitebar{
+    position: absolute;
+    height: 20px;
+    width: 280px;
+    background: black;
+    top: 160px;
+    right: 0;
+
+}
+
+
+.right-col{
+    flex-basis: 70%;
+    height: 100vh;
+   
+}
+
+.navbar{
+    position: absolute;
+    right: 45px;
+    top: 70px;
+    color: white;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 40px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.redbar{
+    position: absolute;
+    height: 20px;
+    width: 280px;
+    background: pink;
+    top: 160px;
+    left: 10;
+}
+
+.redbar span{
+    position: absolute;
+    height: 20px;
+    width: 6px;
+    background: pink;
+    top: 0;
+    left: 300px;
+
+}
+
+.quotetext{
+    width: 400px;
+    top: 219px;
+    right:5px ;
+    position: absolute;
+    color: white;
+    background-color: transparent;
+
+    --b: 50px;   /* thickness of the border */
+    --c: white;   /* color of the border */
+    --w: 20px;  /* width of border */
+  
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+}
+
+.quotetext p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background-color: transparent;
+    line-height: 33px;
+    letter-spacing: 4px;
+    
+
+}
+
+.small-img{
+    top: 439px;
+    right: -45px;
+    position: absolute;
+}
+
+.small-img::after{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 120px;
+    left: -100px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.small-img::before{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: -100px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.line-1{
+    width: 2px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    right: -25px;
+    bottom: 34px;
+}
+
+.line-1::after{
+    content: '2077';
+    position: absolute;
+    top: -30px;
+    left: -14px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+    color: pink;
+}
+
+.feature-img{
+    position: absolute;
+    top: 210px;
+    right: 67px;
+    width: 373px;
+    
+}
+
+.bottom-bar1{
+    height: 7px;
+    width: 210px;
+    background:#1338BE;
+    position: absolute;
+    right: -50px;
+    bottom: -35px;
+}
+
+.text-box{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 460px;
+    background-color: transparent;
+}
+
+
+.text-box h2{
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 60px;
+    background-color: transparent;
+}
+
+.text-box p{
+    font-size: 18px;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: #ff2079;
+    background-color: transparent;
+    line-height: 25px;
+}
+
+.text-box::after{
+ content: '\276f';
+ position: absolute;
+ bottom: -70px;
+ right: 40px;
+ font-size: 25px;
+ transform: rotate(90deg);
+ color:#1338BE;
+}
+
+.line-2{
+    position: absolute;
+    right: 85px;
+    bottom: -55px;
+    width: 130px;
+    height: 4px;
+    background:  pink;
+}
+
+.text-box1{
+    position: absolute;
+    top: 125%;
+    left: 35%;
+    width: 460px;
+    background-color: transparent;
+}
+.text-box1 h2{
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 60px;
+    background-color: transparent;
+}
+
+.text-box1 p{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: #ff2079;
+    background-color: transparent;
+    line-height: 25px;
+}
+
+.text-box1::after{
+ content: '\276f';
+ position: absolute;
+ bottom: -70px;
+ right: 40px;
+ font-size: 25px;
+ transform: rotate(90deg);
+ color:#1338BE;
+}
+
+.whitebar1{
+    position: absolute;
+    height: 20px;
+    width: 285px;
+    background: black;
+    top: 285px;
+    right: 26px;
+
+}
+
+.redbar1{
+    position: absolute;
+    height: 20px;
+    width: 286px;
+    background: pink;
+    top: 724px;
+    left: 10;
+}
+
+.redbar1 span{
+    position: absolute;
+    height: 20px;
+    width: 6px;
+    background: pink;
+    top: 0;
+    left: 305px;
+
+}
+
+.feature-img1{
+    position: absolute;
+    top: 740px;
+    right: 67px;
+    width: 373px;
+}
+.bottom-bar{
+    height: 7px;
+    width: 210px;
+    background:pink;
+    position: absolute;
+    right: -50px;
+    bottom: -35px;
+}
+
+.small-img1{
+    top: 925px;
+    right: 90px;
+    position: absolute;
+}
+
+.small-img1::after{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 120px;
+    left: -100px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.small-img1::before{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: -100px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.text-box2{
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    width: 460px;
+    background-color: transparent;
+}
+.text-box2 h2{
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 60px;
+    background-color: transparent;
+}
+
+.text-box2 p{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: #ff2079;
+    background-color: transparent;
+    line-height: 25px;
+}
+
+
+
+.line-3{
+    position: absolute;
+    right: 174px;
+    bottom: 3px;
+    width: 230px;
+    height: 7px;
+    background: black;
+}
+
+.line-4{
+    position: absolute;
+    left: 60px;
+    top: -40px;
+    width: 230px;
+    height: 7px;
+    background: black;
+}
+
+
+
+.text-box3{
+    position: absolute;
+    top: 195%;
+    left: 34%;
+    width: 460px;
+    background-color: transparent;
+    
+}
+.hm{
+    font-size: 88px;
+    font-weight: 100;
+    line-height: 90px;
+    background-color: transparent;
+    color:#ff2079
+}
+
+.text-box3 p{
+    font-size: 20px;
+    margin-top: 55px;
+    margin-right: -175px;
+    color: white;
+    background-color: transparent;
+    line-height: 25px;
+}
+.small-img2{
+    top: 1460px;
+    right: 90px;
+    position: absolute;
+}
+
+.small-img2::after{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 130px;
+    right: -70px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.small-img2::before{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    right: -70px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.text-box3::after{
+    content: '\276f';
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    font-size: 25px;
+    transform: rotate(90deg);
+    color:#1338BE;
+   }
+   
+   .line-6{
+    position: absolute;
+    right: -160px;
+    bottom: -55px;
+    width: 150px;
+    height: 4px;
+    background: pink;
+}
+.text-box10{
+    position: absolute;
+    top:50.5%;
+    left: 10%;
+    width: 460px;
+    background-color: transparent;
+}
+.text-box10 h2{
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 60px;
+    background-color: transparent;
+}
+
+.text-box10 p{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: #ff2079;
+    background-color: transparent;
+    line-height: 25px;
+}
+
+
+
+.line-10{
+    position: absolute;
+    right: 174px;
+    bottom: 3px;
+    width: 230px;
+    height: 7px;
+    background: black;
+}
+
+.line-101{
+    position: absolute;
+    left: 60px;
+    top: -40px;
+    width: 230px;
+    height: 7px;
+    background: black;
+}
+
+
+.text-box11{
+    position: absolute;
+    top: 296%;
+    left: 34%;
+    width: 460px;
+    background-color: transparent;
+    
+}
+.text-box11 h2{
+    font-size: 88px;
+    font-weight: 100;
+    line-height: 90px;
+    background-color: transparent;
+    color:#ff2079
+}
+
+.text-box11 p{
+    font-size: 20px;
+    margin-top: 55px;
+    margin-right: -175px;
+    color: white;
+    background-color: transparent;
+    line-height: 25px;
+}
+
+.small-img12{
+    top: 2085px;
+    right: 90px;
+    position: absolute;
+}
+
+.small-img12::after{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 120px;
+    right: -70px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.small-img12::before{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    right: -70px;
+    color: #000;
+    font-size:28px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.text-box12::after{
+    content: '\276f';
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    font-size: 25px;
+    transform: rotate(90deg);
+   }
+   
+   .line-6{
+    position: absolute;
+    right: -160px;
+    bottom: -55px;
+    width: 150px;
+    height: 4px;
+    background: pink;
+}
+
+.text-box11::after{
+    content: '\276f';
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    font-size: 25px;
+    transform: rotate(90deg);
+    color:#1338BE;
+   }
+   
+   .whitebar3{
+    position: absolute;
+    height: 20px;
+    width: 280px;
+    background: black;
+ top: 2530px;
+    right: 0;
+
+}
+
+.redbar2{
+    position: absolute;
+    height: 20px;
+    width: 286px;
+    background: pink;
+    top: 2530px;
+    left:438px;
+}
+
+.redbar2 span{
+    position: absolute;
+    height: 20px;
+    width: 6px;
+    background: pink;
+    top: 0;
+    left: 305px;
+
+}
+.text-box13{
+    position: absolute;
+    top: 410%;
+    left: 35%;
+    width: 460px;
+    background-color: transparent;
+}
+.text-box13 h2{
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 60px;
+    background-color: transparent;
+}
+
+.text-box13 p{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 20px;
+    color: #ff2079;
+    background-color: transparent;
+    line-height: 25px;
+}
+
+.text-box13::after{
+ content: '\276f';
+ position: absolute;
+ bottom: -70px;
+ right: 40px;
+ font-size: 25px;
+ transform: rotate(90deg);
+ color:#1338BE;
+}
+
+
+
+.quotetext1{
+    width: 400px;
+    top: 2875px;
+    right:5px ;
+    position: absolute;
+    color: white;
+    background: #ff2079;
+    font-weight: 1000;
+
+    --b: 50px;   /* thickness of the border */
+    --c: white;   /* color of the border */
+    --w: 20px;  /* width of border */
+  
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+}
+
+.quotetext1 p em{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background: transparent;
+    line-height: 33px;
+    letter-spacing: 4px;
+    color: black;
+}
+
+.quotetext1 p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background: transparent;
+    line-height: 33px;
+    letter-spacing: 4px;
+}
+
+.quotetext2{
+    width: 400px;
+    top: 3160px;
+    right:5px ;
+    position: absolute;
+    color: black;
+    background-color: transparent;
+    font-weight: 900;
+   
+
+    --b: 50px;   /* thickness of the border */
+    --c: white;   /* color of the border */
+    --w: 20px;  /* width of border */
+  
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+}
+
+.quotetext2 p em{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background-color: #ff2079;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: black;
+    
+}
+
+.quotetext2 p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background-color: #ff2079;
+    line-height: 30px;
+    letter-spacing: 4px;
+    
+}
+
+
+.comment{
+    width: 300px;
+    background: pink;
+    color: #ff2079;
+    border-style: double ;
+    position: absolute;
+    padding: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    border-width:12px;
+   border-color: black ;
+  right: 444px;
+  top: 2920px; 
+  border-radius: 35px;
+    
+  }
+
+  .comment p{
+    background-color: transparent;
+    color: #1338BE;
+   
+  }
+
+  .comment1{
+    width: 300px;
+    background: pink;
+    color: #ff2079;
+    border-style: double ;
+    position: absolute;
+    padding: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    border-width:12px;
+   border-color: black ;
+  right: 454px;
+  top: 3200px; 
+  border-radius: 35px;
+    
+  }
+
+  .comment1 p{
+    background-color: transparent;
+    color: #1338BE;
+    text-align: center;
+   
+  }
+
+  .comment2{
+    width: 300px;
+    background: pink;
+    color: #ff2079;
+    border-style: double ;
+    position: absolute;
+    padding: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    border-width:12px;
+   border-color: black ;
+  right: 454px;
+  top: 3485px; 
+  border-radius: 35px;
+    
+  }
+
+  .comment2 p{
+    background-color: transparent;
+    color: #1338BE;
+    text-align: center;
+   
+  }
+
+  .quotetext3{
+    width: 400px;
+    top: 3450px;
+    right:5px ;
+    position: absolute;
+    color: black;
+    background-color: transparent;
+    font-weight: 900;
+   
+
+    --b: 50px;   /* thickness of the border */
+    --c: white;   /* color of the border */
+    --w: 20px;  /* width of border */
+  
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+}
+
+.quotetext3 p em{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background-color: #ff2079;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: black;
+    
+}
+
+.quotetext3 p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px; 
+  background-color: #ff2079;
+    line-height: 30px;
+    letter-spacing: 4px;
+    
+}
+
+.small-img20{
+    top: 2600px;
+    right: 80px;
+    position: absolute;
+}
+
+
+.line-20{
+    width: 2px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    right: -25px;
+    bottom: 34px;
+}
+
+.line-20::after{
+    content: '2077';
+    position: absolute;
+    top: -30px;
+    left: -14px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+    color: pink;
+}
+
+.comment3{
+    width: 150px;
+    background: rgb(230, 134, 230);
+    color: #ff2079;
+    border-style: double ;
+    position: absolute;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-width:9px;
+   border-color: black ;
+  right: 1130px;
+  top: 3735px; 
+ 
+    
+  }
+
+  .comment3 p{
+    background-color: transparent;
+    color: #17349b;
+    text-align: center;
+   
+  }
+
+
+  
+.feature-img11{
+    position: absolute;
+    top: 2810px;
+    right: 45px;
+    width: 10px;
+    rotate: 90deg;
+    height: 50px;
+
+}
+
+.feature-img12{
+    position: absolute;
+    top: 1800px;
+    right: 270px;
+    width: 10px;
+    height: 50px;
+
+}
+
+.line-30{
+    width: 2px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    right: 30px;
+    bottom: -190px;
+}
+
+.line-30::after{
+    content: '2077';
+    position: absolute;
+    top: -30px;
+    left: -14px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+    color: pink;
+}
+
+.containernavi{
+
+    width: 200%;
+    height: auto;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+   position: absolute;
+   top: 9%;
+   left: 55%;
+  
+  
+    }
+  
+    button{
+      border-color:black;
+      border-radius: 40px;
+      top:-5px;
+      background: black;
+     
+      }
+  
+    
+  
+    nav button{
+      list-style: none;
+      display: inline-block;
+      padding: 13px 31px;
+      margin: 6px;
+      font-size: 15px;
+      font-weight: 750;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      font-family: 'Times New Roman', Times, serif;
+  
+      }
+  
+  
+      nav button::after{
+      content: '';
+      background: #9c94f4;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+      }
+  
+      nav button:hover{
+      color: white;
+      }
+  
+      nav button:hover::after{
+      top: 50.25%;
+      opacity: 1;
+      }
+  
+      .error-hint hidden{
+        display: none;
+      }
+
+      
+ html{
+    scroll-behavior: smooth;
+  }
+ 

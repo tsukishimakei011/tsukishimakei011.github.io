@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    
+   
+}
+
+.scan{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 200;
+    background: black;
+    margin-top:-100px ;
+}
+
+.scan .fingerprint{
+    position: relative;
+    width: 340px;
+    height: 373px;
+    background: url(fingerprint_image.png);
+    background-size: 373px;
+    
+    z-index: 200;
+
+}
+
+.scan .fingerprint::before
+{
+    content: '';
+    position: absolute;
+    margin-top: -48px;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 420px;
+    background: url(fingerPrint_02.png);
+    background-size: 373px;
+    animation: animate 4s ease-in-out infinite;
+    z-index: 2000;
+    
+}
+
+@keyframes animate{
+    0%,100%
+    {
+        height: 0%;
+    }
+    50%{
+        height: 420px;
+    }
+
+}
+
+.scan .fingerprint::after{
+    content: '';
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -20px;
+    top:0;
+    width: 100%;
+    height: 8px;
+    background: #3fefef;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #3fefef ) drop-shadow(0 0 60px #3fefef);
+    animation: animate_line 4s ease-in-out infinite;
+    z-index: 2000;
+   
+}
+
+@keyframes animate_line{
+    0%,100%
+    {
+        top: 0%;
+    }
+
+    50%{
+        top: 107%;
+    }
+}
+
+.scan h3
+{
+    text-transform: uppercase;
+    line-height:2;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #ff08fc;
+    filter: drop-shadow(0 0 20px #ff08fc) drop-shadow(0 0 60px #ff08fc);
+    animation: animate_text 1s steps(1) infinite ;
+    z-index: 2000;
+}
+
+@keyframes animate_text{
+    0%,100%
+    {
+        opacity: 0;
+    }
+
+    50%{
+        opacity:1;
+    }
+}
+
+.containerhouseopeningtwo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-top: 500px;
+   
+  }
+  
+  .containerhouseopeningfour{
+    position: relative;
+    display: inline-block;
+    padding: 20px 90px;
+    border: 5px solid  #9c94f4;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #ff08fc;
+    transition: 0.5s;
+    transition-delay: 1.5s;
+    z-index: 100;
+    background-color: black;
+    
+  }
+  
+  .containerhouseopeningfour:hover
+  {
+    transition-delay: 1s;
+    color: white;
+    box-shadow: 0 0 20px white;
+  
+  
+  }
+  
+  
+  .containerhouseopeningthree {
+    position: relative;
+    z-index:100;
+    font-size: 23px;
+  }
+  .containerhouseopeningfour:nth-child(2){
+    filter:rotate(80deg);
+  }
+  
+  .containerhouseopeningfour::before{
+    content:'';
+    position: absolute;
+    left:-20px;
+    top:50%;
+    transform: translateY(-50%);
+    width:  20px;
+    height: 2px;
+    background: #9c94f4 ;
+    box-shadow: 5px -8px 0 #9c94f4 ,5px 8px 0 #9c94f4;
+     transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+     transition-delay: 1s,0.5s,0s,0s;
+  
+  
+  }
+  .containerhouseopeningfour:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow:  5px 0 0 #9c94f4,5px 0 0 #9c94f4 ;
+    transition-delay: 0s,0.5s,1s,1s;
+  }
+  
+    .containerhouseopeningfour::after{
+      content:'';
+      position: absolute;
+      right:-20px;
+      top:50%;
+      transform: translateY(-50%);
+      width:  20px;
+      height: 2px;
+      background: #9c94f4 ;
+      box-shadow: -5px -8px 0 #9c94f4 ,-5px 8px 0 #9c94f4 ;
+       transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+       transition-delay: 1s,0s,0s,0s;
+  
+  
+    }
+  
+    .containerhouseopeningfour:hover::after{
+      width: 60%;
+      height: 100%;
+      right: -2px;
+      box-shadow: -5px 0 0 #9c94f4,-5px 0 0 #9c94f4 ;
+      transition-delay: 0s,0s,1s,1s;
+    }
+
+
+
+
+
+

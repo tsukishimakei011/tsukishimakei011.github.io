@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Stephenson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="WB_final_contact.css">
+</head>
+<body>
+  <script src="WB_final_about.js"></script>
+  <div class="full">
+    <section class="contact">
+        <div class="content">
+          <h1 class="contactus">CONTACT US</h1>
+          <p>If u are intrested in joining the courses, feel free to drop your info for registration. Your future is beyond your imagination.</p>
+        </div>
+        <div class="container">
+          <div class="contactinfo">
+            <div class="box">
+              <p class="icon">&#127758</p>
+              <div class="text">
+                <h3>ADDRESS</h3>
+                <p>No. 5,Jalan Universiti,Bandar Sunway,47800</p>
+              </div>
+            </div>
+            <div class="box">
+              <p class="icon">&#128241</p>
+              <div class="text">
+                <h3>EMAIL</h3>
+                <p>sst@sunway.edu.my</p>
+              </div>
+            </div>
+            <div class="box">
+              <p class="icon">&#128231</p>
+              <div class="text">
+                <h3>PHONE</h3>
+                <p>03-7491 8622</p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="contactform" >
+            <form name="myform" onsubmit="return validate()" >
+              <h2>REGISTRATION</h2>
+              <div class="inputbox">
+                <input type="text" id="myform_name" name="name"  pattern="^[a-zA-z]+([\s][a-zA-Z]+)*$" required="required" placeholder="Full Name">
+              </input>
+                <span for="myform_name">FULL NAME</span>
+              </div>
+              <div class="inputbox">
+                <input type="email" id="myform_email" name="email" pattern="/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|
+                \\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|
+                \[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:
+                (?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/" required="required" placeholder="Email"  ></input>
+                <span for="myform_email">EMAIL</span>
+              </div>
+
+        
+              <div class="inputbox">
+                <input type="tel" id="myform_phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" required="required" placeholder="Contact number" ></input>
+                <span for="myform_phone">PHONE NUMBER</span>
+              </div>
+              <div class="inputbox">
+               <textarea required="required" name="message" placeholder="Your comment"></textarea>
+                <span>YOUR COMMENT</span>
+              </div>
+              <div class="inputbox">
+                <input type="submit" name="" value="send">
+              </div>
+              <div class="inputbox">
+                <img class= "imgfish" src="cyberpunk2.gif">
+               </div>
+  
+            </form>
+          </div>
+        </div>
+      </section>
+  
+      <div>
+      <img class= "gif" src="cyberpunk.gif"> 
+    </div>
+    <div class="containernavi">
+      <nav>
+        <a href="WB_final_sign.html" style="font-size:25px"> &#x1F4DD</a>
+        <a href="WB_final_main.html"><button>MAIN</button></a>
+          &nbsp;
+        <a href="web_fundamental_final_about.html"><button>ABOUT</button></a>
+        <a href="WB_final_courses.html"><button>COURSES</button></a>
+          &nbsp;
+        <a href="WB_final_contact.html"><button>CONTACT</button></a>
+        
+        </nav>
+      
+      </div>
+  
+
+  <div class="logo">
+    <img class=logoimg src="logocrop.svg">
+</div>
+
+
+
+  
+
+<script>
+ var phone_input = document.getElementById("myform_phone");
+
+phone_input.addEventListener('input', () => {
+  phone_input.setCustomValidity('');
+  phone_input.checkValidity();
+});
+
+phone_input.addEventListener('invalid', () => {
+  if(phone_input.value === '') {
+    phone_input.setCustomValidity('Enter phone number!');
+  } else {
+    phone_input.setCustomValidity('Enter phone number in this format: 123-4567890');
+  }
+})
+  </script>
+  
+  <script>
+    var email_input = document.getElementById("myform_email");
+   
+   email_input.addEventListener('input', () => {
+     email_input.setCustomValidity('');
+     email_input.checkValidity();
+   });
+   
+   email_input.addEventListener('invalid', () => {
+     if(email_input.value === '') {
+       email_input.setCustomValidity('Enter email!');
+     } else {
+       email_input.setCustomValidity('Enter email in this format: xxx@xxx.com');
+     }
+   })
+
+ 
+    
+     </script>
+     
+     <script>
+      
+      var name_input = document.getElementById("myform_name");
+     
+     name_input.addEventListener('input', () => {
+       name_input.setCustomValidity('');
+       name_input.checkValidity();
+     });
+     
+     name_input.addEventListener('invalid', () => {
+       if(name_input.value === '') {
+         name_input.setCustomValidity('Enter name!');
+       } else {
+         name_input.setCustomValidity('Enter name in this format: xxx xxx xxx');
+       }
+     })
+       </script>
+       
+
+</script>
+       
+
+    
+  
+   </body>
+  </html>
+  
